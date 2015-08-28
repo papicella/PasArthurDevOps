@@ -8,8 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestDemo
 {
     @RequestMapping(value = "/helloworld", method = RequestMethod.GET)
-     public String hello()
+    public String hello()
     {
         return "hello world";
+    }
+
+    @RequestMapping(value = "/todaysdate", method = RequestMethod.GET)
+    public String helloWithDate()
+    {
+        return "hello world at " + new java.util.Date();
     }
 }
