@@ -16,6 +16,6 @@ public class RestDemo
     @RequestMapping(value = "/todaysdate", method = RequestMethod.GET)
     public String helloWithDate()
     {
-        return "hello world at " + new java.util.Date();
+        return "hello world at : " + new java.util.Date();
     }
 }
