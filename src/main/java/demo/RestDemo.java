@@ -18,4 +18,10 @@ public class RestDemo
     {
         return "hello world at : " + new java.util.Date();
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String pastest()
+    {
+        return "Pas at Agile NZ Conference";
+    }
 }
