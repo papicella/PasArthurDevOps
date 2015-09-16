@@ -22,7 +22,6 @@ public class RestDemo
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String pastest()
     {
-        return "Pas at ATO";
+        return "Pas at ATO showing a demo";
     }
-
 }
